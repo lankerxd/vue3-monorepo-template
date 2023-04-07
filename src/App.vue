@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div />
+  <router-view />
 </template>
 
 <style lang="scss" scoped>
