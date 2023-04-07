@@ -1,4 +1,18 @@
 {
-  "*.{js,jsx,ts,tsx,vue}": ["eslint --fix"],
-  "*.{css,sass,scss,vue}": ["npx stylelint --fix"]
+  "*.{js,jsx,ts,tsx}": [
+    "eslint --fix",
+    "prettier --write"
+  ],
+  "*.json": [
+    "prettier --write"
+  ],
+  "*.vue": [
+    "eslint --fix",
+    "prettier --write",
+    "stylelint --fix"
+  ],
+  "*.{scss,less,styl,html}": [
+    "stylelint --fix",
+    "prettier --write"
+  ]
 }

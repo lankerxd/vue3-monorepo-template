@@ -2,9 +2,11 @@ module.exports = {
   extends: [
     'stylelint-config-standard-scss',
     'stylelint-config-recommended-vue',
+    'stylelint-config-prettier',
   ],
   plugins: ['stylelint-order'],
-  customSyntax: 'postcss-html',
+  // customSyntax: 'postcss-html',
+  customSyntax: 'postcss-scss',
   rules: {
     indentation: 2,
     'selector-pseudo-element-no-unknown': [
