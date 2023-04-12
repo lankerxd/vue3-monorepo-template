@@ -14,7 +14,7 @@ module.exports = {
         ignorePseudoElements: ['v-deep'],
       },
     ],
-    'number-leading-zero': 'never',
+    'number-leading-zero': 'always',
     'no-descending-specificity': null,
     'font-family-no-missing-generic-family-keyword': null,
     'selector-type-no-unknown': null,
