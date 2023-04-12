@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import {} from 'vue'
-  import { useCounterStore } from '@/store/index'
+  import { useCounterStore } from '@/store/example'
   const store = useCounterStore()
 </script>
 

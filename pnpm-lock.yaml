@@ -22,6 +22,7 @@ specifiers:
   husky: ^8.0.3
   lint-staged: ^13.2.0
   pinia: ^2.0.33
+  pinia-plugin-persistedstate: ^3.1.0
   postcss: ^8.4.18
   postcss-html: ^1.5.0
   postcss-scss: 4.0.6
@@ -47,6 +48,7 @@ dependencies:
   axios: 1.3.2
   dayjs: 1.11.7
   pinia: 2.0.33_hmuptsblhheur2tugfgucj7gc4
+  pinia-plugin-persistedstate: 3.1.0_pinia@2.0.33
   vue: 3.2.47
   vue-query: 1.26.0_vue@3.2.47
   vue-router: 4.1.6_vue@3.2.47
@@ -3377,6 +3379,14 @@ packages:
     engines: {node: '>=0.10'}
     hasBin: true
     dev: true
+
+  /pinia-plugin-persistedstate/3.1.0_pinia@2.0.33:
+    resolution: {integrity: sha512-8UN+vYMEPBdgNLwceY08mi5olI0wkYaEb8b6hD6xW7SnBRuPydWHlEhZvUWgNb/ibuf4PvufpvtS+dmhYjJQOw==}
+    peerDependencies:
+      pinia: ^2.0.0
+    dependencies:
+      pinia: 2.0.33_hmuptsblhheur2tugfgucj7gc4
+    dev: false
 
   /pinia/2.0.33_hmuptsblhheur2tugfgucj7gc4:
     resolution: {integrity: sha512-HOj1yVV2itw6rNIrR2f7+MirGNxhORjrULL8GWgRwXsGSvEqIQ+SE0MYt6cwtpegzCda3i+rVTZM+AM7CG+kRg==}
