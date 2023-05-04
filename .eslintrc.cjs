@@ -7,32 +7,22 @@ module.exports = {
   },
   extends: [
     'plugin:vue/vue3-recommended',
-    'standard-with-typescript',
+    'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
   ],
   overrides: [],
+  parser: 'vue-eslint-parser',
   parserOptions: {
+    parser: '@typescript-eslint/parser',
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: ['./tsconfig.json'],
+    // project: ['./tsconfig.json'],
+    // extraFileExtensions: ['vue'],
   },
   ignorePatterns: ['vite.config.ts', 'postcss.config.js'],
   // "parser": "@typescript-eslint/parser",
   plugins: ['vue', '@typescript-eslint', 'prettier'],
   rules: {
-    'vue/max-attributes-per-line': [
-      'error',
-      {
-        // 单行最多只能有3个属性
-        singleline: {
-          max: 3,
-        },
-        // 多行的情况下每行只能有1个属性
-        multiline: {
-          max: 1,
-        },
-      },
-    ],
     '@typescript-eslint/promise-function-async': 'off',
   },
 }
