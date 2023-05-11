@@ -3,7 +3,7 @@
 - pnpm run husky:prepare
 
 # commitlint type-enum 
-- git提交信息格式[type]: 内容...
+- git提交信息格式[type](子包名): 内容...
 类型 | 描述
 ---- | ----
 build | 编译相关的修改，例如发布版本、对项目构建或者依赖的改动
