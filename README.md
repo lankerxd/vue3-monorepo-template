@@ -1,6 +1,6 @@
 # before run the project
-  pnpm install
-  pnpm run husky:prepare
+- pnpm install
+- pnpm run husky:prepare
 
 # commitlint type-enum 
 - git提交信息格式[type]: 内容...
@@ -17,3 +17,6 @@ refactor | 代码重构
 revert | 回滚到上一个版本
 style | 代码格式修改, 注意不是 css 修改
 test | 测试用例修改
+
+# monorepo 相关
+- 为单独的package安装依赖：pnpm --filter <package_selector> <command>
