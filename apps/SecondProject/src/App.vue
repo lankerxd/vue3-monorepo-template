@@ -1,16 +1,24 @@
 <script setup lang="ts">
-  import { testFirstFunc } from '@lankerxd/first-project'
+  // import { testFirstFunc } from '@lankerxd/first-project'
   import { testFunc } from '@/test'
   import { version } from 'vue'
-  testFunc()
+  import MyTest from '@lankerxd/first-project/src/MyTest.vue'
+  MyTest.testFunc()
   // import Request from '@lankerxd/core/request'
-  const data = testFirstFunc()
+  let data: any
+  const test = async () => {
+    const firstProject = await import('@lankerxd/first-project')
+    data = firstProject.testFirstFunc()
+    console.log(firstProject.testFirstFunc(), data)
+  }
+  test()
 </script>
 
 <template>
   <p>SecondProject</p>
   <p>{{ data }}</p>
   <div>vue 版本: {{ version }}</div>
+  <MyTest></MyTest>
 </template>
 
 <style lang="scss" scoped>
