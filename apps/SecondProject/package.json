@@ -14,5 +14,8 @@
   "dependencies": {
     "@lankerxd/core": "workspace:^1.0.0",
     "@lankerxd/first-project": "workspace:^1.0.0"
+  },
+  "devDependencies": {
+    "@lankerxd/project-config": "workspace:^"
   }
 }

@@ -1,4 +1,4 @@
 {
-  "extends": "../tsconfig.node.json",
+  "extends": "@lankerxd/project-config/tsconfig.node.json",
   "include": ["vite.config.ts"]
 }

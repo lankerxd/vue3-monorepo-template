@@ -11,7 +11,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "vue": "3.2.25"
+  "devDependencies": {
+    "@lankerxd/project-config": "workspace:^"
   }
 }

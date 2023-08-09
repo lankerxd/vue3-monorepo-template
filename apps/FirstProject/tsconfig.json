@@ -1,12 +1,10 @@
 {
-  "extends": "../tsconfig.base.json",
+  "extends": "@lankerxd/project-config/tsconfig.vite.json",
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    },
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }]
